@@ -1,0 +1,16 @@
+PODS:
+  - CSwiftLog (0.1.0)
+
+DEPENDENCIES:
+  - CSwiftLog (from `../`)
+
+EXTERNAL SOURCES:
+  CSwiftLog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CSwiftLog: 935a2275435a48fd0e69df7a20f1c7a0560e5288
+
+PODFILE CHECKSUM: 202d93f7aed4a586b9ba6a4ba466e56d0a7f16b4
+
+COCOAPODS: 1.11.2

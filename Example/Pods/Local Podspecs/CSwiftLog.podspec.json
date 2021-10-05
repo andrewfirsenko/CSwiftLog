@@ -1,0 +1,22 @@
+{
+  "name": "CSwiftLog",
+  "version": "0.1.0",
+  "summary": "A short description of CSwiftLog.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Andrew/CSwiftLog",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Andrew": "andrewfirsenko@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Andrew/CSwiftLog.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CSwiftLog/Classes/**/*"
+}
