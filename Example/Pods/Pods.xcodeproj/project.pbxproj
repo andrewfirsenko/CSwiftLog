@@ -442,6 +442,37 @@
 			};
 			name = Debug;
 		};
+		1E88E0E7C1CDBB1558EB9F2000F10F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB51DB93E8C616CE8C3773972EEBCE67 /* CSwiftLog.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSwiftLog/CSwiftLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSwiftLog/CSwiftLog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSwiftLog/CSwiftLog.modulemap";
+				PRODUCT_MODULE_NAME = CSwiftLog;
+				PRODUCT_NAME = CSwiftLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -505,6 +536,36 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5EBB1B042730696F5F7F262CC2D3E405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A967C476771EF08FA9D24304280F04 /* CSwiftLog.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSwiftLog/CSwiftLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSwiftLog/CSwiftLog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CSwiftLog/CSwiftLog.modulemap";
+				PRODUCT_MODULE_NAME = CSwiftLog;
+				PRODUCT_NAME = CSwiftLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -574,37 +635,6 @@
 			};
 			name = Release;
 		};
-		A6C2BB6ADAA680F2F46499A8865B7349 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB51DB93E8C616CE8C3773972EEBCE67 /* CSwiftLog.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSwiftLog/CSwiftLog-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSwiftLog/CSwiftLog-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CSwiftLog/CSwiftLog.modulemap";
-				PRODUCT_MODULE_NAME = CSwiftLog;
-				PRODUCT_NAME = CSwiftLog;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -667,36 +697,6 @@
 			};
 			name = Release;
 		};
-		D4644F5E97D4442FC50B7D6C50AF5E72 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8A967C476771EF08FA9D24304280F04 /* CSwiftLog.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSwiftLog/CSwiftLog-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSwiftLog/CSwiftLog-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CSwiftLog/CSwiftLog.modulemap";
-				PRODUCT_MODULE_NAME = CSwiftLog;
-				PRODUCT_NAME = CSwiftLog;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F746C27B0B05117F39D9E90634044122 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69DA1F28C9E91FC6786304C194A4C1A0 /* Pods-CSwiftLog_Example.debug.xcconfig */;
@@ -735,8 +735,8 @@
 		20F08FBB29602BF694B0763CC1D1F927 /* Build configuration list for PBXNativeTarget "CSwiftLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4644F5E97D4442FC50B7D6C50AF5E72 /* Debug */,
-				A6C2BB6ADAA680F2F46499A8865B7349 /* Release */,
+				5EBB1B042730696F5F7F262CC2D3E405 /* Debug */,
+				1E88E0E7C1CDBB1558EB9F2000F10F05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

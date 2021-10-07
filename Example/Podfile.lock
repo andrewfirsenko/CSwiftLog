@@ -1,5 +1,5 @@
 PODS:
-  - CSwiftLog (0.1.0)
+  - CSwiftLog (1.0.0)
 
 DEPENDENCIES:
   - CSwiftLog (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CSwiftLog: 935a2275435a48fd0e69df7a20f1c7a0560e5288
+  CSwiftLog: 0001b06ddc560a63bd3e96498f45983bc61c9fa7
 
 PODFILE CHECKSUM: 202d93f7aed4a586b9ba6a4ba466e56d0a7f16b4
 

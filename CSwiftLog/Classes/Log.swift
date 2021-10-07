@@ -37,6 +37,7 @@ public class Log {
     }
     
     // MARK: With category
+    #if DEBUG
     public func log(
         tag: String? = nil,
         _ message: String,
@@ -48,8 +49,10 @@ public class Log {
     )  {
         Log.log(tag: tag, message, type, style: style, category: self.category, file: file, function: function, line: line)
     }
+    #endif
     
     // MARK: Not category
+    #if DEBUG
     public static func log(
         tag: String? = nil,
         _ message: String,
@@ -61,8 +64,9 @@ public class Log {
     )  {
         log(tag: tag, message, type, style: style, category: nil, file: file, function: function, line: line)
     }
+    #endif
     
-    // MARK: Log
+    // MARK: Main Log
     private static func log(
         tag: String? = nil,
         _ message: String,
@@ -73,32 +77,30 @@ public class Log {
         function: String = #function,
         line: Int = #line
     ) {
-        #if DEBUG
-        let fileName = (file as NSString).lastPathComponent
         // Add time
         var printString = time(style: style)
         // Add Type icon
-        printString.append(" " + type.rawValue)
+        printString.append(" \(type.rawValue)")
         // Add fileName|line|function
         switch style {
         case .full:
-            printString.append(" " + "[\(fileName): \(line)] \(function) ==>")
+            let fileName = (file as NSString).lastPathComponent
+            printString.append(" [\(fileName): \(line)] \(function) ==>")
         case .short:
-            printString.append(" " + "==>")
+            printString.append(" ==>")
         }
         // Add category & tag
         if let category = category, let tag = tag {
-            printString.append(" " + "[\(category)/\(tag)]")
+            printString.append(" [\(category)/\(tag)]")
         } else if let category = category {
-            printString.append(" " + "[\(category)]")
+            printString.append(" [\(category)]")
         } else if let tag = tag {
-            printString.append(" " + "[\(tag)]")
+            printString.append(" [\(tag)]")
         }
         // Add message
-        printString.append(" " + message)
+        printString.append(" \(message)")
         
         print(printString)
-        #endif
     }
     
 }
