@@ -49,6 +49,8 @@ public class Log {
     )  {
         Log.log(tag: tag, message, type, style: style, category: self.category, file: file, function: function, line: line)
     }
+    #else
+    public func log(tag: String? = nil, _ message: String, _ type: LogType = .info, style: LogStyle = .short) {}
     #endif
     
     // MARK: Not category
@@ -64,9 +66,12 @@ public class Log {
     )  {
         log(tag: tag, message, type, style: style, category: nil, file: file, function: function, line: line)
     }
+    #else
+    public static func log(tag: String? = nil, _ message: String, _ type: LogType = .info, style: LogStyle = .short) {}
     #endif
     
     // MARK: Main Log
+    #if DEBUG
     private static func log(
         tag: String? = nil,
         _ message: String,
@@ -102,5 +107,6 @@ public class Log {
         
         print(printString)
     }
+    #endif
     
 }

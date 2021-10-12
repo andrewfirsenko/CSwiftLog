@@ -57,7 +57,7 @@ CSwiftLog is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CSwiftLog', '~> 1.0.1'
+pod 'CSwiftLog', '1.0.2'
 ```
 
 ## Example
